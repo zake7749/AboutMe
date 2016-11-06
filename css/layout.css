@@ -1304,3 +1304,12 @@ p {
   border-bottom-color: rgb(204, 0, 95) !important;
   font-family: "Microsoft JhengHei",sans-serif;
 }
+
+.ch-title {
+  color: rgb(255, 255, 255)!important;
+  font-family: "Microsoft YaHei",sans-serif !important;
+  font-size: 48px!important;
+  font-weight: 700!important;
+  line-height: 57px!important;
+  text-align: center;
+}
