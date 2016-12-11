@@ -1163,6 +1163,42 @@ footer .social-links li:first-child { margin-left: 0; }
 	color: #cc005f;
 }
 
+.head-title{
+  font-family: "Microsoft YaHei" !important;
+  padding-top: 10px;
+  font-size: 48px !important;
+  font-weight: bold;
+  letter-spacing: 5px !important;
+}
+
+.head-meta{
+  font-family: "Microsoft YaHei" !important;
+}
+
+.gold-tag{
+  padding:8px 12px;
+  border: 1px rgb(65,170,65) solid;
+  border-radius: 8px !important;
+  background-color: rgb(90, 180, 90);
+  margin-right: 15px;
+  color:#F5F5F5;
+}
+
+.trophy{
+  margin-left:0px;
+  list-style-type: none;
+  font-family: "Microsoft JhengHei",sans-serif;
+  //border-bottom: 1px solid #AAA;
+  display: inline-block;
+}
+
+.trophy::before{
+  font-family: "FontAwesome";
+  content: "\f091";
+  //color:#AAA;
+  font-size: 20px;
+}
+
 /**
  * responsive:
  * Intro
@@ -1230,7 +1266,7 @@ footer .social-links li:first-child { margin-left: 0; }
 
 .side-title{
   color: #cc005f;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins',"Microsoft YaHei", sans-serif;
   margin-bottom: 10px;
 	font-size: 2.3rem;
 	line-height: 1.565;
@@ -1280,20 +1316,7 @@ p {
   font-size: 25px;
 }
 
-.trophy{
-  margin-left:20px;
-  list-style-type: none;
-  font-family: "Microsoft JhengHei",sans-serif;
-  border-bottom: 1px solid #AAA;
-  display: inline-block;
-}
 
-.trophy::before{
-  font-family: "FontAwesome";
-  content: "\f091";
-  color:#AAA;
-  font-size: 20px;
-}
 
 .skill-meta{
   margin-top: 20px;
