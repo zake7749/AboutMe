@@ -232,6 +232,13 @@ ul#nav li.current a { color: #F06000; }
    font-size: 20px;
 }
 
+.info-reference {
+  color:#BBBBBB !important;
+}
+
+.info-reference:hover{
+  color:#11ABB0 !important;
+}
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
@@ -330,105 +337,125 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .python {
-  	width: 65%;
+  	width: 68%;
     background: rgb(53, 114, 165);
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
+  	-moz-animation: python 2s ease;
+  	-webkit-animation: python 2s ease;
 }
 .cPlusPlus {
-  	width: 68%;
+  	width: 60%;
     background: rgb(243, 75, 125);
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
+  	-moz-animation: cPlusPlus 2s ease;
+  	-webkit-animation: cPlusPlus 2s ease;
 }
 .java {
-  	width: 62%;
+  	width: 63%;
     background: rgb(218, 91, 11);
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
+  	-moz-animation: java 2s ease;
+  	-webkit-animation: java 2s ease;
 }
 
 .csharp {
-  	width: 64%;
+  	width: 58%;
     background: rgb(23, 134, 0);
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
+  	-moz-animation: csharp 2s ease;
+  	-webkit-animation: csharp 2s ease;
 }
 
-.gensim {
-  	width: 60%;
+.pytorch {
+  	width: 65%;
     background: rgb(12,139,182);
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
+  	-moz-animation: pytorch 2s ease;
+  	-webkit-animation: pytorch 2s ease;
 }
 .TensorFlow {
-  	width: 51%;
+  	width: 57%;
     background: rgb(250,171,52);
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
+  	-moz-animation: TensorFlow 2s ease;
+  	-webkit-animation: TensorFlow 2s ease;
 }
 
 .keras {
-  	width: 51%;
+  	width: 62%;
     background: rgb(208,0,0);
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
+  	-moz-animation: keras 2s ease;
+  	-webkit-animation: keras 2s ease;
 }
 .sklearn {
   	width: 58%;
     background: rgb(241, 224, 90);
-  	-moz-animation: jquery 2s ease;
-  	-webkit-animation: jquery 2s ease;
+  	-moz-animation: sklearn 2s ease;
+  	-webkit-animation: sklearn 2s ease;
 }
 
-@-moz-keyframes photoshop {
+@-moz-keyframes python {
+  0%   { width: 0px;  }
+  100% { width: 68%;  }
+}
+@-moz-keyframes cPlusPlus {
   0%   { width: 0px;  }
   100% { width: 60%;  }
 }
-@-moz-keyframes illustrator {
+@-moz-keyframes java {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
+  100% { width: 63%;  }
 }
-@-moz-keyframes wordpress {
+@-moz-keyframes csharp {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 58%;  }
 }
-@-moz-keyframes css {
+@-moz-keyframes pytorch {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 65%;  }
 }
-@-moz-keyframes html5 {
+@-moz-keyframes TensorFlow {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-moz-keyframes jquery {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 57%;  }
 }
 
-@-webkit-keyframes photoshop {
+@-moz-keyframes keras {
+  0%   { width: 0px;  }
+  100% { width: 62%;  }
+}
+
+@-moz-keyframes sklearn {
+  0%   { width: 0px;  }
+  100% { width: 58%;  }
+}
+
+@-webkit-keyframes python {
+  0%   { width: 0px;  }
+  100% { width: 68%;  }
+}
+@-webkit-keyframes cPlusPlus {
   0%   { width: 0px;  }
   100% { width: 60%;  }
 }
-@-webkit-keyframes illustrator {
+@-webkit-keyframes java {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
+  100% { width: 63%;  }
 }
-@-webkit-keyframes wordpress {
+@-webkit-keyframes csharp {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 58%;  }
 }
-@-webkit-keyframes css {
+@-webkit-keyframes pytorch {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 65%;  }
 }
-@-webkit-keyframes html5 {
+@-webkit-keyframes TensorFlow {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 57%;  }
 }
-@-webkit-keyframes jquery {
+
+@-webkit-keyframes keras {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 62%;  }
+}
+
+@-webkit-keyframes sklearn {
+  0%   { width: 0px;  }
+  100% { width: 58%;  }
 }
 
 /* ------------------------------------------------------------------ */
