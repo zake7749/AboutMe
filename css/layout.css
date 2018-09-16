@@ -271,7 +271,7 @@ ul#nav li.current a { color: #F06000; }
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
 
-.education, .work {
+.education, .work{
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
@@ -1191,12 +1191,13 @@ footer .social-links li:first-child { margin-left: 0; }
 }
 
 .head-title{
-  font-family: "Microsoft YaHei" !important;
+  font-family: "poppins-medium", "sans-serif";
   padding-top: 10px;
-  font-size: 48px !important;
+  font-size: 60px !important;
   font-weight: bold;
-  letter-spacing: 5px !important;
+  letter-spacing: .25rem !important;
 }
+
 
 .head-meta{
   font-family: "Microsoft YaHei" !important;
@@ -1293,7 +1294,7 @@ footer .social-links li:first-child { margin-left: 0; }
 
 .side-title{
   color: #cc005f;
-	font-family: 'Poppins',"Microsoft YaHei", sans-serif;
+	font-family: 'Poppins', "poppins-bold", "Microsoft YaHei", sans-serif;
   margin-bottom: 10px;
 	font-size: 2.3rem;
 	line-height: 1.565;
