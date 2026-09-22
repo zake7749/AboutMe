@@ -33,7 +33,7 @@ def main():
                         reduced_motion='reduce',is_mobile=width<760,has_touch=width<760)
                     ctx.add_init_script(seed)
                     page=ctx.new_page()
-                    page.goto(base_url,wait_until='load')
+                    page.goto(base_url+'about/',wait_until='load')
                     assert page.locator('html').get_attribute('data-theme')==theme
                     page.evaluate(CAPTURE_CLICKS)
                     for project in data['projects']:
@@ -84,7 +84,7 @@ def main():
                     ctx.close()
                 # The links stay native when page scripts are blocked.
                 ctx=browser.new_context(java_script_enabled=False,viewport={'width':390,'height':844})
-                page=ctx.new_page();page.goto(base_url,wait_until='load')
+                page=ctx.new_page();page.goto(base_url+'about/',wait_until='load')
                 for project in data['projects']:
                     if not project.get('competition_ref'):continue
                     link=page.locator('#project-'+project['id']+' .project-competition-link')

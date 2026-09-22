@@ -12,9 +12,17 @@ output** — edit the sources below and rebuild, never the generated files.
 python src/build.py
 ```
 
-Python 3.10+, standard library only. It writes `index.html`, `css/horizon.css`
-and `js/horizon.js`. Commit the output: GitHub Pages serves the repository as-is
-and does not run the build.
+Python 3.10+, standard library only. It writes `about/index.html`,
+`css/horizon.css`, `js/horizon.js`, and an `index.html` that sends the
+deployment root to `/about/`. Commit the output: neither host runs the build.
+
+The root is kept free on purpose. The blog still lives at
+`zake7749.github.io`, and if it ever moves to this domain it has to take the
+root so every post keeps the path it has today; putting it under `/blog/`
+would change every post URL instead of only the domain. The root redirect is
+relative, so it works on the custom domain, the workers.dev URL and GitHub
+Pages alike, and it is deliberately not permanent — browsers cache a 301 for
+a very long time, and this one is meant to be removed.
 
 ## Where things live
 

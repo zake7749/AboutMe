@@ -17,12 +17,14 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import posixpath
 
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
 from qa_support import CAPTURE_CLICKS, HERO_SHA256, ROOT, content, launch, serve, ui, write_report
 
+PAGE = 'about/index.html'
 EXTERNAL_ASSETS = {'css/horizon.css', 'js/horizon.js', 'assets/hero-city.webp', 'favicon.png'}
 
 
@@ -32,10 +34,10 @@ def main():
     ap.add_argument('--chromium', default=None)
     args = ap.parse_args()
     theme = args.theme
-    html = (ROOT / 'index.html').read_text(encoding='utf-8')
+    html = (ROOT / PAGE).read_text(encoding='utf-8')
     data = content()
     strings = ui('en')
-    report = {'entry': 'index.html', 'engine': 'Chromium', 'starting_theme': theme,
+    report = {'entry': PAGE, 'engine': 'Chromium', 'starting_theme': theme,
               'load_method': 'loopback HTTP; no third-party requests', 'checks': [],
               'limitations': ['No Safari/Firefox or physical iPhone test',
                               'External page availability not checked',
@@ -60,12 +62,20 @@ def main():
                     doc.select_one('meta[property="og:image"]')['content']]
         check('Absolute URLs match the declared origin',
               all(u.startswith(origin + '/') for u in absolute), {'origin': origin, 'urls': absolute})
+        # The root hands readers on rather than serving a second copy of the page.
+        root = BeautifulSoup((ROOT / 'index.html').read_text(encoding='utf-8'), 'html.parser')
+        target = posixpath.dirname(PAGE) + '/'
+        check('Root redirects to the page and names it canonical',
+              root.select_one('meta[http-equiv="refresh"]')['content'].endswith('url=' + target)
+              and root.select_one('link[rel="canonical"]')['href'] == f'{origin}/{target}'
+              and not root.select('.publication-item'))
         ids = [tag['id'] for tag in doc.select('[id]')]
         check('Unique document and SVG identifiers', len(ids) == len(set(ids)))
         check('Seven publication entries', len(doc.select('.publication-item')) == 7)
         check('Four competition entries', len(doc.select('.competition')) == 4)
         check('No nested interactive controls', len(doc.select('a a, a button, button a, button button')) == 0)
-        referenced = {tag.get('href') or tag.get('src')
+        here = posixpath.dirname(PAGE)
+        referenced = {posixpath.normpath(posixpath.join(here, tag.get('href') or tag.get('src')))
                       for tag in doc.select('link[rel="stylesheet"], link[rel="icon"], script[src], img[src]')}
         check('Only the expected local assets are referenced', referenced == EXTERNAL_ASSETS, sorted(referenced))
         check('Every referenced asset exists', all((ROOT / path).is_file() for path in referenced))
@@ -131,7 +141,7 @@ def main():
             page.on('pageerror', lambda e: errors.append(str(e)))
             page.on('requestfailed', lambda r: failed.append(r.url))
             page.on('response', lambda r: failed.append(f'{r.status} {r.url}') if r.status >= 400 else None)
-            page.goto(base_url, wait_until='load')
+            page.goto(base_url + 'about/', wait_until='load')
             page.wait_for_timeout(120)
             check('All page assets load', not failed, failed)
             check('Stored theme applied at first paint', page.locator('html').get_attribute('data-theme') == theme)
@@ -300,7 +310,7 @@ def main():
             # Reader with scripting blocked: the page is still a complete document.
             nojs = b.new_context(java_script_enabled=False, viewport={'width': 390, 'height': 844})
             page = nojs.new_page()
-            page.goto(base_url, wait_until='load')
+            page.goto(base_url + 'about/', wait_until='load')
             check('No-script publications remain readable', page.locator('.publication-detail:visible').count() == 7)
             check('No-script Abstract paragraphs are all visible', page.locator('.publication-abstract p:visible').count() == 14)
             check('No-script competitions remain readable', page.locator('.competition-detail:visible').count() == 4)

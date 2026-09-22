@@ -40,9 +40,12 @@ CANONICAL_ORIGIN = DATA['origin'].rstrip('/')
 BASE_PATH = DATA.get('base_path', '/')
 
 # Output targets. `prefix` is how the page reaches repository-root assets.
+# The root is reserved: if the blog ever moves to this domain it has to take
+# the root, so every post keeps the path it has today. `out` is where the page
+# sits under the deployment root, `prefix` how it reaches root-level assets.
 LOCALES = {
-    'en': {'lang': 'en', 'out': 'index.html', 'prefix': ''},
-    'zh': {'lang': 'zh-Hant', 'out': 'zh/index.html', 'prefix': '../'},
+    'en': {'lang': 'en', 'out': 'about/index.html', 'prefix': '../'},
+    'zh': {'lang': 'zh-Hant', 'out': 'zh/about/index.html', 'prefix': '../../'},
 }
 # zh joins this list once its copy lands in content.json and ui-strings.json.
 # `python src/build.py --check zh` lists exactly what is still missing.
@@ -494,6 +497,35 @@ def write_assets() -> None:
         print(f'Wrote {target}: {len(text.encode()):,} bytes.')
 
 
+def write_root_redirect() -> None:
+    """Sends the deployment root to the page until something else claims it.
+
+    The target is relative, so this works unchanged wherever the repository is
+    served from: the custom domain, the workers.dev URL, GitHub Pages under
+    /AboutMe/. Deliberately not a permanent redirect — browsers cache those for
+    a very long time, and this one is meant to be removed the day the root has
+    its own occupant.
+    """
+    target = LOCALES[BUILD_LOCALES[0]]['out'].replace('index.html', '')
+    canonical = CANONICAL_ORIGIN + BASE_PATH + target
+    page = f"""<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{E(S('site_title'))}</title>
+<link rel="canonical" href="{E(canonical, quote=True)}">
+<meta http-equiv="refresh" content="0; url={E(target, quote=True)}">
+<script>location.replace('{target}' + location.search + location.hash)</script>
+<style>body{{margin:0;display:grid;place-items:center;min-height:100vh;background:#f6f5f0;color:#19342d;font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}}p{{margin:0;padding:24px}}a{{color:#2f5d43}}</style>
+</head>
+<body><p><a href="{E(target, quote=True)}">Continue to the page</a>.</p></body>
+</html>
+"""
+    (ROOT / 'index.html').write_text(page, encoding='utf-8')
+    print(f'Wrote index.html: root redirect to /{target}')
+
+
 def build(locale: str) -> None:
     global LOCALE
     LOCALE, out = locale, ROOT / LOCALES[locale]['out']
@@ -525,6 +557,7 @@ def main() -> None:
     write_assets()
     for locale in BUILD_LOCALES:
         build(locale)
+    write_root_redirect()
     check_metric_freshness()
 
 
