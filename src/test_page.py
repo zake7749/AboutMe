@@ -25,7 +25,8 @@ from playwright.sync_api import sync_playwright
 from qa_support import CAPTURE_CLICKS, HERO_SHA256, ROOT, content, launch, serve, ui, write_report
 
 PAGE = 'about/index.html'
-EXTERNAL_ASSETS = {'css/horizon.css', 'js/horizon.js', 'assets/hero-city.webp', 'favicon.png'}
+EXTERNAL_ASSETS = {'css/horizon.css', 'js/horizon.js', 'assets/hero-city.webp',
+                   'favicon.svg', 'favicon.png', 'apple-touch-icon.png'}
 
 
 def main():
@@ -76,7 +77,7 @@ def main():
         check('No nested interactive controls', len(doc.select('a a, a button, button a, button button')) == 0)
         here = posixpath.dirname(PAGE)
         referenced = {posixpath.normpath(posixpath.join(here, tag.get('href') or tag.get('src')))
-                      for tag in doc.select('link[rel="stylesheet"], link[rel="icon"], script[src], img[src]')}
+                      for tag in doc.select('link[rel="stylesheet"], link[rel="icon"], link[rel="apple-touch-icon"], script[src], img[src]')}
         check('Only the expected local assets are referenced', referenced == EXTERNAL_ASSETS, sorted(referenced))
         check('Every referenced asset exists', all((ROOT / path).is_file() for path in referenced))
         # An asset the page stopped using would otherwise ship unnoticed.

@@ -54,7 +54,8 @@ BUILD_LOCALES = ['en']
 CSS_OUT = 'css/horizon.css'
 JS_OUT = 'js/horizon.js'
 HERO_ASSET = 'assets/hero-city.webp'
-FAVICON = 'favicon.png'
+# SVG first for browsers that take it, PNG for the rest, touch icon for iOS.
+ICONS = ('favicon.svg', 'favicon.png', 'apple-touch-icon.png')
 
 LOCALE = 'en'
 MISSING: list[str] = []
@@ -457,7 +458,9 @@ def page(locale: str) -> str:
 <meta name="author" content="{E(DATA['profile']['publication_name'], quote=True)}">
 <meta name="theme-color" content="{THEME_COLORS['light']}" data-light="{THEME_COLORS['light']}" data-dark="{THEME_COLORS['dark']}">
 <link rel="canonical" href="{E(canonical, quote=True)}">{alternates()}
-<link rel="icon" href="{prefix}{FAVICON}">
+<link rel="icon" href="{prefix}{ICONS[0]}" type="image/svg+xml">
+<link rel="icon" href="{prefix}{ICONS[1]}" sizes="48x48">
+<link rel="apple-touch-icon" href="{prefix}{ICONS[2]}">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="{E(title, quote=True)}">
 <meta property="og:description" content="{E(description, quote=True)}">
@@ -497,6 +500,22 @@ def write_assets() -> None:
         print(f'Wrote {target}: {len(text.encode()):,} bytes.')
 
 
+def write_sitemap() -> None:
+    """Only pages, so the redirecting root is left out. lastmod comes from the
+    content file rather than the clock: a rebuild that changed nothing should
+    not claim the page is newer than it is."""
+    changed = date.fromtimestamp((ROOT / 'data/content.json').stat().st_mtime).isoformat()
+    urls = ''.join(
+        f'\n  <url><loc>{E(CANONICAL_ORIGIN + BASE_PATH + LOCALES[loc]["out"].replace("index.html", ""))}</loc>'
+        f'<lastmod>{changed}</lastmod></url>'
+        for loc in BUILD_LOCALES)
+    (ROOT / 'sitemap.xml').write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}\n</urlset>\n',
+        encoding='utf-8')
+    print(f'Wrote sitemap.xml: {len(BUILD_LOCALES)} URL(s), lastmod {changed}')
+
+
 def write_root_redirect() -> None:
     """Sends the deployment root to the page until something else claims it.
 
@@ -515,6 +534,7 @@ def write_root_redirect() -> None:
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{E(S('site_title'))}</title>
 <link rel="canonical" href="{E(canonical, quote=True)}">
+<link rel="icon" href="{ICONS[0]}" type="image/svg+xml">\n<link rel="icon" href="{ICONS[1]}" sizes="48x48">
 <meta http-equiv="refresh" content="0; url={E(target, quote=True)}">
 <script>location.replace('{target}' + location.search + location.hash)</script>
 <style>body{{margin:0;display:grid;place-items:center;min-height:100vh;background:#f6f5f0;color:#19342d;font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}}p{{margin:0;padding:24px}}a{{color:#2f5d43}}</style>
@@ -558,6 +578,7 @@ def main() -> None:
     for locale in BUILD_LOCALES:
         build(locale)
     write_root_redirect()
+    write_sitemap()
     check_metric_freshness()
 
 
