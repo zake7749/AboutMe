@@ -1,0 +1,12 @@
+# Cloudflare uploads this directory as the site's public assets. Only the built
+# page and what it references belong there; everything else is repository
+# material that happens to sit in the same folder.
+.git
+.gitignore
+.assetsignore
+.wrangler
+wrangler.jsonc
+build
+src
+data
+README.md

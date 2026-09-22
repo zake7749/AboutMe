@@ -52,6 +52,14 @@ def main():
         check('Review-only robots directive removed', not doc.select('meta[name="robots"]'))
         check('Canonical URL and description present',
               doc.select_one('link[rel="canonical"]') is not None and doc.select_one('meta[name="description"]') is not None)
+        # Easy to change apart, and the page would then point readers and
+        # crawlers at somewhere it is not served from.
+        origin = data['origin'].rstrip('/')
+        absolute = [doc.select_one('link[rel="canonical"]')['href'],
+                    doc.select_one('meta[property="og:url"]')['content'],
+                    doc.select_one('meta[property="og:image"]')['content']]
+        check('Absolute URLs match the declared origin',
+              all(u.startswith(origin + '/') for u in absolute), {'origin': origin, 'urls': absolute})
         ids = [tag['id'] for tag in doc.select('[id]')]
         check('Unique document and SVG identifiers', len(ids) == len(set(ids)))
         check('Seven publication entries', len(doc.select('.publication-item')) == 7)

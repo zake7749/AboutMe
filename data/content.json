@@ -1,7 +1,8 @@
 {
   "schema_version": "5.1.0",
   "review_date": "2026-09-22",
-  "base_path": "/AboutMe/",
+  "base_path": "/",
+  "origin": "https://zake7749.dev",
   "profile": {
     "display_name": "Justin Yang",
     "publication_name": "Kai-Chou Yang",

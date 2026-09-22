@@ -34,7 +34,9 @@ UI = json.loads((ROOT / 'data/ui-strings.json').read_text(encoding='utf-8'))
 E = html.escape
 PLUS = '<svg class="plus" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><path d="M4 10h12"/><path class="plus-vertical" d="M10 4v12"/></svg>'
 
-CANONICAL_ORIGIN = 'https://zake7749.github.io'
+# Where the page is served from. The canonical link, og:url and og:image are
+# built from these, so they travel with the data rather than the template.
+CANONICAL_ORIGIN = DATA['origin'].rstrip('/')
 BASE_PATH = DATA.get('base_path', '/')
 
 # Output targets. `prefix` is how the page reaches repository-root assets.

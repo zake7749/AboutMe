@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "aboutme",
+  "compatibility_date": "2026-09-21",
+  "observability": { "enabled": true },
+  // The built page sits at the repository root because GitHub Pages serves the
+  // repository as it stands. .assetsignore keeps the rest out of the upload.
+  "assets": { "directory": "." }
+}
