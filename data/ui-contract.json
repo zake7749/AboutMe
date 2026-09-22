@@ -1,0 +1,69 @@
+{
+  "version": "Horizon v7.2 English",
+  "priority_note": "Current UI contract; overrides historical policy strings in content.json.",
+  "base": "Approved Horizon v7.1 English light/dark",
+  "chinese_version": "unchanged",
+  "entry_files": {
+    "light": "01-horizon-v7.2-light.html",
+    "dark": "02-horizon-v7.2-dark.html"
+  },
+  "publication": {
+    "visible": [
+      "year",
+      "title",
+      "venue",
+      "document kind"
+    ],
+    "expanded": [
+      "Abstract: two original English paragraphs",
+      "full ordered author list",
+      "original paper/article URL",
+      "existing code links"
+    ],
+    "title_action": "native external link",
+    "non_link_header_action": "toggle disclosure",
+    "multiple_open": true,
+    "expanded_background": "unchanged",
+    "no_script": "all details visible"
+  },
+  "footer": {
+    "component": "same as Hero social_links",
+    "order": [
+      "GitHub",
+      "Google Scholar",
+      "Hugging Face",
+      "Blog"
+    ],
+    "email": "keep visible text",
+    "hit_target_px": 44
+  },
+  "theme": {
+    "root_attribute": "data-theme",
+    "switch": "in-place; does not reset scroll or details",
+    "persistence": false,
+    "default": "explicit entry-file theme",
+    "no_script": "relative native link to companion HTML"
+  },
+  "navbar": "v6.1 repair preserved; transparent top, scoped blur on scroll, no white no-script plate",
+  "content_change": true,
+  "approved_for_deployment": false,
+  "additional_recognition": {
+    "label": "Kaggle Competition Master",
+    "url": "https://www.kaggle.com/zake7749",
+    "basis": "owner-provided",
+    "replaces": [
+      "Top 1% · KDD Cup · 2018",
+      "Top 1% · Toxic Comment Classification · 2018"
+    ]
+  },
+  "projects": {
+    "title_and_main_area": "Native primary link extended over card via a CSS pseudo-element; no hover navigation or card onclick.",
+    "footer_layer": "Separate z-index:2 layer above the primary link z-index:1.",
+    "event_label": "Native official competition link, sourced via competition_ref; subtle underline and keyboard focus.",
+    "resource_links": "Independent original destinations; unchanged.",
+    "non_link_outcome_text": "Rank, year, and prize are readable text; not an invisible repo link.",
+    "prize": "Kyara outcome line: US$30,000 prize. Same small size; no large badge, Hero claim, or total-pool display.",
+    "award_scope": "Competition-entry award, not owner net income.",
+    "legacy_detail_field": "Fallback copy for non-competition projects only; linked outcomes derive rank/year/URL from awards."
+  }
+}

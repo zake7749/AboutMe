@@ -1,0 +1,105 @@
+{
+  "_note": "Interface chrome only. Everything that is authored content lives in content.json, as `field` / `field_en` / `field_zh`. A blank or missing zh string falls back to English and is listed by `python src/build.py --check zh`.",
+  "en": {
+    "site_title": "Kai-Chou Yang · Justin Yang — Machine learning engineer",
+    "site_description": "Justin Yang (Kai-Chou Yang) builds data and training systems for language models and agents. Projects, publications, competition solutions and background.",
+
+    "skip_to_content": "Skip to content",
+    "back_to_top_aria": "{name} — back to top",
+    "main_navigation": "Main navigation",
+    "mobile_navigation": "Mobile navigation",
+    "menu": "Menu",
+    "toggle_navigation": "Toggle navigation",
+    "switch_to_dark": "Switch to dark theme",
+    "switch_to_light": "Switch to light theme",
+    "profiles_and_blog": "Profiles and blog",
+    "opens_in_new_tab": "(opens in a new tab)",
+
+
+    "projects_heading": "Selected projects.",
+    "place": "{rank} place",
+    "official_competition": "Official competition: {name}",
+    "prize_aria": "Competition-entry prize: {amount} US dollars",
+
+    "platform_profile_aria": "{platform} — public profile",
+
+    "competitions_heading": "Competitions.",
+    "competition_toggle_aria": "Task and solution — {name}",
+    "the_task": "The task",
+    "the_solution": "The solution",
+    "recognition_aria": "Competition recognition",
+
+    "publication_heading": "Publications.",
+    "publication_toggle_aria": "Abstract and authors — {title}",
+    "abstract": "Abstract",
+    "google_scholar": "Google Scholar",
+    "writing_note": "More implementation notes and derivations live at {link}.",
+
+    "talks_heading": "Selected talks.",
+    "slides": "Slides",
+
+    "background_heading": "Experience & education.",
+    "experience": "Experience",
+    "education": "Education",
+    "community": "Community",
+    "present": "Present",
+    "gpa": "GPA",
+    "months": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+
+    "contact": "Contact",
+    "footer_role": "Machine learning engineer",
+    "copyright": "© {year} {name}",
+    "back_to_top": "Back to top"
+  },
+  "zh": {
+    "site_title": "",
+    "site_description": "",
+
+    "skip_to_content": "跳至主要內容",
+    "back_to_top_aria": "{name} — 回到頁首",
+    "main_navigation": "主要導覽",
+    "mobile_navigation": "行動版導覽",
+    "menu": "選單",
+    "toggle_navigation": "開關導覽選單",
+    "switch_to_dark": "切換至深色主題",
+    "switch_to_light": "切換至淺色主題",
+    "profiles_and_blog": "個人檔案與部落格",
+    "opens_in_new_tab": "（在新分頁開啟）",
+
+
+    "projects_heading": "",
+    "place": "",
+    "official_competition": "",
+    "prize_aria": "",
+
+    "platform_profile_aria": "",
+
+    "competitions_heading": "",
+    "competition_toggle_aria": "",
+    "the_task": "",
+    "the_solution": "",
+    "recognition_aria": "",
+
+    "publication_heading": "",
+    "publication_toggle_aria": "",
+    "abstract": "",
+    "google_scholar": "",
+    "writing_note": "",
+
+    "talks_heading": "",
+    "slides": "",
+
+    "background_heading": "",
+    "experience": "",
+    "education": "",
+    "community": "",
+    "present": "",
+    "gpa": "",
+    "months": [],
+
+    "contact": "",
+    "footer_role": "",
+    "copyright": "",
+    "back_to_top": ""
+  }
+}

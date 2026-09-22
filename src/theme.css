@@ -1,0 +1,65 @@
+/* Two deliberately related palettes. The Hero image and repaired glass header
+   are shared, not tinted or inverted along with the page. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #111a18;
+  --ink: #e3e9e0;
+  --muted: #a6b4aa;
+  --accent: #bacfac;
+  --line: #2b3932;
+  --soft: #151f1b;
+  --panel: #1b2521;
+  --card-bg: #151f1c;
+  --card-border: #2a382f;
+  --card-hover: #1b2720;
+  --card-hover-border: #63765d;
+  --hover-tint: rgba(184,205,169,.035);
+  --badge-bg: rgba(184,205,169,.055);
+  --focus: #c3d7b5;
+  --selection-bg: #455c42;
+  --selection-ink: #f1f4eb;
+  --glass-fallback: rgba(17,26,24,.94);
+  --mobile-glass: rgba(17,26,24,.91);
+}
+:root[data-theme="dark"] .hero::before {
+  background: linear-gradient(90deg,rgba(6,17,19,.57),rgba(6,17,19,.15) 65%,rgba(6,17,19,.05)),linear-gradient(0deg,rgba(17,26,24,.96),transparent 42%);
+}
+:root[data-theme="dark"] .site-nav:not(.over-hero) { --focus: #c3d7b5; }
+/* Keep the v6.1 header geometry. The switch is a 44px native link, never a banner. */
+.nav-inner { gap: 16px; }
+.brand { margin-right: auto; }
+.nav-tools { display: flex; align-items: center; gap: 17px; }
+.theme-toggle { display: inline-flex; width: 44px; height: 44px; align-items: center; justify-content: center; flex: 0 0 auto; color: inherit; opacity: .78; background: none; border: 0; padding: 0; margin: 0; font: inherit; cursor: pointer; -webkit-appearance: none; appearance: none; }
+.theme-toggle:hover, .theme-toggle:focus-visible { opacity: 1; }
+.theme-toggle svg { fill: none; stroke: currentColor; stroke-width: 1.35; stroke-linecap: round; stroke-linejoin: round; }
+.theme-sun { display: none; }
+:root[data-theme="dark"] .theme-moon { display: none; }
+:root[data-theme="dark"] .theme-sun { display: block; }
+/* Production: one page per locale. The choice persists in localStorage and,
+   until the reader makes one, follows the operating system. A small script in
+   <head> applies it before first paint; without scripting the toggle hides
+   itself and the page stays light. */
+@media (max-width: 1100px) and (min-width: 761px) {
+  .desktop-nav { gap: 16px; }
+  .nav-inner { gap: 12px; }
+}
+@media (max-width: 760px) {
+  .nav-tools { gap: 13px; }
+}
+@media (max-width: 360px) {
+  .nav-tools { gap: 8px; }
+}
+@media (max-width: 760px) {
+  :root[data-theme="dark"] .hero::before {
+    background: linear-gradient(90deg,#0611139e,#06111328),linear-gradient(0deg,rgba(17,26,24,.96),transparent 56%);
+  }
+}
+/* Print remains readable even when the dark entry file is printed. */
+@media print {
+  :root[data-theme="dark"] {
+    color-scheme: light; --bg:#fff; --ink:#111; --muted:#444; --accent:#222;
+    --line:#ccc; --panel:#fff; --soft:#fff; --card-bg:#fff; --card-border:#ccc;
+  }
+  .theme-toggle, .footer-socials { display: none !important; }
+  .publication-detail[hidden] { display: block !important; }
+}

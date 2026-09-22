@@ -1,0 +1,1332 @@
+{
+  "schema_version": "5.1.0",
+  "review_date": "2026-09-22",
+  "base_path": "/AboutMe/",
+  "profile": {
+    "display_name": "Justin Yang",
+    "publication_name": "Kai-Chou Yang",
+    "name_zh": "楊凱州",
+    "handle": "zake7749",
+    "professional_identity": "Machine Learning Engineer · LLM & Agent Post-Training",
+    "current_role": "NLP Team Lead",
+    "organization": "Taiwan AI Labs",
+    "location": "Taipei, Taiwan",
+    "email": "zake7749@gmail.com",
+    "source_ids": [
+      "S01",
+      "S02",
+      "S03",
+      "U01",
+      "U05",
+      "U06"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/zake7749"
+      },
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/zake7749"
+      },
+      {
+        "label": "Writing",
+        "url": "https://zake7749.github.io/"
+      },
+      {
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?hl=en&user=mUbKQD4AAAAJ"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://tw.linkedin.com/in/kai-chou-yang/zh-tw"
+      },
+      {
+        "label": "Kaggle",
+        "url": "https://www.kaggle.com/zake7749"
+      }
+    ],
+    "resume_url": null,
+    "portrait_asset": null,
+    "community_roles": [
+      {
+        "title": "Qwen Dev Ambassador",
+        "organization": "Qwen",
+        "relationship": "community_role",
+        "start": null,
+        "end": null,
+        "official_profile_url": null,
+        "source_ids": [
+          "OWNER-2026-09-21-QWEN"
+        ],
+        "source_note": "Owner explicitly provided this title in the current conversation. Do not infer employment, official verification, responsibilities, or a start date."
+      }
+    ]
+  },
+  "introduction": {
+    "heading": "About.",
+    "paragraphs": [
+      "I’m a machine learning engineer building data and training systems for language models and agents. At Taiwan AI Labs, I lead NLP work across data engineering, post-training, and agent systems, with a current focus on learning from synthetic environments, tool use, and verifiable interactions.",
+      "I came to the field through competitions and open source, and still think of the work as a craft—something to practise with care. Outside work, I make small things and publish what comes out: code, models, and datasets around conversational AI, language-model training, and evaluation.",
+      "I write, too. I’m interested in technology where it meets everyday life, and when I explain something difficult, I try to find the story around it and examples beyond the field. If something I’ve written is wrong or could be better, I’d be glad to hear about it."
+    ],
+    "source_ids": [
+      "U01",
+      "U05",
+      "U06",
+      "OWNER-2026-09-21-QWEN"
+    ],
+    "lead": "I build the systems behind how language models learn and act."
+  },
+  "projects": [
+    {
+      "id": "lumisonde",
+      "title": "Lumisonde",
+      "category": "Deep research · Personal project",
+      "description": "A deep-research system turns open-ended questions into source-grounded reports. Specialist agents gather evidence before writing, then verify claims and citations against that record. Each report exposes its source trail, supporting excerpts, and audit results, not just an answer.",
+      "detail": "Evidence-first research · Multi-agent orchestration",
+      "theme": "lumisonde",
+      "source_ids": [
+        "V3-LUMISONDE-ABOUT",
+        "V3-LUMISONDE-REPORT",
+        "OWNER-V3-LUMISONDE"
+      ],
+      "links": [
+        {
+          "label": "Explore Lumisonde",
+          "url": "https://lumisonde.com/"
+        },
+        {
+          "label": "How it works",
+          "url": "https://lumisonde.com/about/"
+        }
+      ],
+      "subtitle": "From open questions to inspectable answers.",
+      "primary_url": "https://lumisonde.com/",
+      "primary_label": "Website",
+      "secondary_links": [
+        {
+          "label": "How it works",
+          "url": "https://lumisonde.com/about/"
+        }
+      ]
+    },
+    {
+      "id": "kyara",
+      "title": "Kyara",
+      "category": "Language models · Open project",
+      "description": "Retrieval-augmented data synthesis and post-training for Traditional Chinese language models, with released training recipes, models, and instruction data.",
+      "detail": "2nd place · Google / Kaggle · 2025",
+      "theme": "kyara",
+      "source_ids": [
+        "S07",
+        "S08",
+        "S11",
+        "V4-KYARA-ARTICLE",
+        "V4-GEMMA-OFFICIAL",
+        "V7_2-GEMMA-RULES",
+        "OWNER-V7_2-KYARA-PRIZE"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/zake7749/Kyara"
+        },
+        {
+          "label": "Instruction data",
+          "url": "https://huggingface.co/datasets/zake7749/kyara-chinese-instruct-1M"
+        },
+        {
+          "label": "Solution",
+          "url": "https://medium.com/data-science-collective/kaggle-2nd-place-crafting-data-for-llm-success-09b4fd71d037"
+        }
+      ],
+      "subtitle": "Better Traditional Chinese through better data.",
+      "primary_url": "https://github.com/zake7749/Kyara",
+      "primary_label": "GitHub",
+      "secondary_links": [
+        {
+          "label": "Instruction data",
+          "url": "https://huggingface.co/datasets/zake7749/kyara-chinese-instruct-1M"
+        },
+        {
+          "label": "Solution",
+          "url": "https://medium.com/data-science-collective/kaggle-2nd-place-crafting-data-for-llm-success-09b4fd71d037"
+        }
+      ],
+      "competition_ref": "gemma-2025",
+      "competition_link_label": "Google / Kaggle",
+      "prize": {
+        "amount": 30000,
+        "currency": "USD",
+        "display_label": "prize",
+        "scope": "Kyara competition-entry award; not a claim about an individual net payout",
+        "source_ids": [
+          "V7_2-GEMMA-RULES",
+          "OWNER-V7_2-KYARA-PRIZE"
+        ]
+      }
+    },
+    {
+      "id": "monomer",
+      "title": "Monomer",
+      "category": "Chinese writing · Open project",
+      "subtitle": "Writing as plan, draft and revision.",
+      "description": "A Chinese writing model trained on its own process: planning, drafting, review and revision form a data-synthesis loop, with rejection sampling selecting the examples worth training on. Released as an open model collection alongside Zhiyin, a Chinese writing benchmark with its scoring code and run records.",
+      "detail": "Data synthesis · Model evaluation",
+      "primary_url": "https://github.com/zake7749/Monomer",
+      "primary_label": "GitHub",
+      "secondary_links": [
+        {
+          "label": "Model collection",
+          "url": "https://huggingface.co/collections/zake7749/monomer"
+        },
+        {
+          "label": "Zhiyin benchmark",
+          "url": "https://github.com/zake7749/Chinese-Writing-Bench"
+        }
+      ],
+      "source_ids": [
+        "V5-MONOMER",
+        "S20",
+        "S21",
+        "V6-MONOMER"
+      ],
+      "publish": true
+    }
+  ],
+  "awards": [
+    {
+      "id": "gemma-2025",
+      "rank": "2nd",
+      "year": "2025",
+      "name": "Unlock Global Communication with Gemma",
+      "organizer": "Google · Kaggle",
+      "description": "Adapting Gemma to a language or cultural context.",
+      "source_ids": [
+        "S07",
+        "S11",
+        "U01",
+        "V4-GEMMA-OFFICIAL",
+        "V4-KYARA-ARTICLE"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/zake7749/Kyara"
+        },
+        {
+          "label": "Solution",
+          "url": "https://medium.com/data-science-collective/kaggle-2nd-place-crafting-data-for-llm-success-09b4fd71d037"
+        },
+        {
+          "label": "Instruction data",
+          "url": "https://huggingface.co/datasets/zake7749/kyara-chinese-instruct-1M"
+        }
+      ],
+      "official_url": "https://www.kaggle.com/competitions/gemma-language-tuning",
+      "task": "Create a Gemma 2 model variant for a specific language or cultural context, with a clear, reproducible account of the tuning approach.",
+      "solution": "Kyara focuses on Traditional Chinese: retrieval-grounded instruction synthesis, translation and rewriting, followed by supervised fine-tuning and preference optimization. The work includes released models, training recipes, and instruction and preference datasets.",
+      "solution_label": "Kyara"
+    },
+    {
+      "id": "gap-2019",
+      "rank": "4th",
+      "year": "2019",
+      "name": "Gendered Pronoun Resolution",
+      "organizer": "Google AI · Kaggle",
+      "description": "Resolving ambiguous pronouns across genders.",
+      "source_ids": [
+        "S26",
+        "R03",
+        "V4-GAP-OFFICIAL",
+        "V4-GAP-PAPER"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/zake7749/Fill-the-GAP"
+        },
+        {
+          "label": "Paper",
+          "url": "https://aclanthology.org/W19-3815/"
+        }
+      ],
+      "official_url": "https://www.kaggle.com/competitions/gendered-pronoun-resolution",
+      "task": "Given a passage, an ambiguous pronoun and two candidate entities, predict A, B or neither. The challenge evaluates pronoun resolution across genders using multiclass log loss.",
+      "solution": "Fill the GAP combines BERT representations in an interaction-based ensemble, with analysis of which layers and features best resolve the reference. The entry reached fourth place without data augmentation.",
+      "solution_label": "Fill the GAP"
+    },
+    {
+      "id": "wsdm-2019",
+      "rank": "3rd",
+      "year": "2019",
+      "name": "WSDM Cup · Fake News Classification",
+      "organizer": "ByteDance · WSDM Cup",
+      "description": "Classifying the relationship between two headlines.",
+      "source_ids": [
+        "S27",
+        "S28",
+        "R04",
+        "OWNER-V3-LINKS",
+        "V3-WSDM-REPO",
+        "V4-WSDM-OFFICIAL",
+        "V4-WSDM-DATA",
+        "V4-WSDM-PAPER",
+        "V4-WSDM-OVERVIEW"
+      ],
+      "links": [
+        {
+          "label": "Code",
+          "url": "https://github.com/zake7749/WSDM-Cup-2019"
+        },
+        {
+          "label": "Paper",
+          "url": "https://arxiv.org/abs/1907.07347"
+        },
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/1RFKX6dJT4-MdwvKA2gglTXy1VJumkVDHU-USJpGDllc/edit?slide=id.p1#slide=id.p1"
+        }
+      ],
+      "official_url": "https://www.kaggle.com/competitions/fake-news-pair-classification-challenge",
+      "task": "Given a known fake-news headline A and a new headline B, classify their relation: agreed, disagreed or unrelated. The task compares headline pairs against a known claim, rather than judging an isolated article as true or false.",
+      "solution": "NLI Transfer treats the task as natural language inference. It combines NLI models and BERT, retrains with noisy labels in two stages, and uses transitivity relations to resolve selected test pairs.",
+      "solution_label": "NLI Transfer"
+    },
+    {
+      "id": "cikm-2018",
+      "rank": "2nd",
+      "year": "2018",
+      "name": "CIKM AnalytiCup",
+      "organizer": "Alibaba · CIKM",
+      "description": "Adapting question-pair matching from English to Spanish.",
+      "source_ids": [
+        "S01",
+        "R02",
+        "OWNER-V3-LINKS",
+        "V4-CIKM-OFFICIAL",
+        "V4-CIKM-ARTICLE"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/zake7749/CIKM-AnalytiCup-2018"
+        },
+        {
+          "label": "Solution",
+          "url": "https://medium.com/data-science/simtext-2nd-solution-for-cikm-analyticup-2018-b3347e026e67"
+        },
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/1m-xFTHESikD-6iCMGf8AsNTPa1trB8_2VHhr8edHg0A/edit?slide=id.p1#slide=id.p1"
+        }
+      ],
+      "official_url": "https://tianchi.aliyun.com/markets/tianchi/CIKM2018",
+      "task": "Determine whether two questions have the same meaning in Spanish, using English as the source language for adaptation. The challenge focuses on short-text semantic matching under limited target-language supervision.",
+      "solution": "Closer ensembles symmetric attention, recurrent and convolutional matching models with word-, character- and statistical features. A second stage fine-tunes on soft labels, then stacks the predictions to improve generalization.",
+      "solution_label": "Closer"
+    }
+  ],
+  "additional_recognition": [
+    {
+      "id": "kaggle-competition-master",
+      "label": "Kaggle Competition Master",
+      "url": "https://www.kaggle.com/zake7749",
+      "source_ids": [
+        "OWNER-2026-09-22-KAGGLE"
+      ],
+      "verification_basis": "owner_provided",
+      "note": "Requested label supplied directly by the owner. No award year, tier date or medal count is inferred."
+    }
+  ],
+  "publications": [
+    {
+      "id": "sinn-2020",
+      "title": "Generalize Sentence Representation with Self-Inference",
+      "authors": [
+        "Kai-Chou Yang",
+        "Hung-Yu Kao"
+      ],
+      "year": 2020,
+      "date": "2020-04-03",
+      "date_kind": "publisher_publication_date",
+      "venue": "AAAI 2020",
+      "full_venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "volume": "34",
+      "issue": "05",
+      "pages": "9394–9401",
+      "type": "conference_paper",
+      "author_position": 1,
+      "doi": "10.1609/aaai.v34i05.6481",
+      "arxiv_id": null,
+      "source_ids": [
+        "S25",
+        "V71-SINN"
+      ],
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://ojs.aaai.org/index.php/AAAI/article/view/6481"
+        }
+      ],
+      "summary_en": "Introduced SINN, a sentence encoder that combines recurrent and convolutional evidence through a learned interaction and gating mechanism.",
+      "summary_zh": "提出 SINN，以交互空間與閘控機制整合循環及卷積編碼器的語意資訊。",
+      "featured": true,
+      "publish": true,
+      "evidence": "public_record",
+      "ranking_scope": "historical; no present-day SOTA claim",
+      "display_venue": "AAAI 2020",
+      "primary_url": "https://ojs.aaai.org/index.php/AAAI/article/view/6481",
+      "primary_label": "Paper",
+      "secondary_links": [],
+      "abstract_en": [
+        "Different sentence encoders capture different aspects of language, making simple concatenation or averaging an unreliable way to combine them across tasks. The Self-Inference Neural Network (SINN) addresses this by learning how its own representations should interact. Recurrent and convolutional encoders provide complementary contextual features; an interaction layer and self-attention construct additional semantic evidence. A shared vector gate then selects and mixes these representations before pooling them into a fixed-size sentence embedding.",
+        "Experiments cover natural language inference, news classification, and sentiment analysis on MultiNLI, SciTail, AG News, and SST. The paper reports strong results relative to the sentence-encoding baselines evaluated, with particularly competitive inference performance. Fusion comparisons, ablations, and error analyses show how adaptive gating can retain useful information even when one component encoder is weaker. The work presents representation fusion as a learned inference problem, rather than a fixed combination rule, and examines how the preferred mixture changes with the task."
+      ],
+      "abstract_editorial": {
+        "kind": "original_editorial_paraphrase",
+        "label": "Abstract",
+        "reviewed_on": "2026-09-22",
+        "source_ids": [
+          "V71-SINN"
+        ],
+        "review_scope": "full_paper",
+        "word_count": 151,
+        "not_a_verbatim_publisher_abstract": true
+      }
+    },
+    {
+      "id": "fill-gap-2019",
+      "title": "Fill the GAP: Exploiting BERT for Pronoun Resolution",
+      "authors": [
+        "Kai-Chou Yang",
+        "Timothy Niven",
+        "Tzu Hsuan Chou",
+        "Hung-Yu Kao"
+      ],
+      "year": 2019,
+      "date": "2019-08",
+      "date_kind": "proceedings_month",
+      "venue": "GeBNLP Workshop at ACL 2019",
+      "full_venue": "Proceedings of the First Workshop on Gender Bias in Natural Language Processing",
+      "volume": null,
+      "issue": null,
+      "pages": "102–106",
+      "type": "workshop_paper",
+      "author_position": 1,
+      "doi": "10.18653/v1/W19-3815",
+      "arxiv_id": null,
+      "source_ids": [
+        "S26",
+        "V71-GAP"
+      ],
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://aclanthology.org/W19-3815/"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/zake7749/Fill-the-GAP"
+        }
+      ],
+      "summary_en": "Analyzed BERT representations and interaction-based ensembles for pronoun resolution, reporting the fourth-place competition entry without data augmentation.",
+      "summary_zh": "以 BERT 表徵分析與交互式集成模型處理代名詞消歧，報告未使用資料增強的競賽第四名方法。",
+      "featured": true,
+      "publish": true,
+      "evidence": "public_record",
+      "ranking_scope": "historical; no present-day SOTA claim",
+      "display_venue": "GeBNLP Workshop at ACL 2019",
+      "primary_url": "https://aclanthology.org/W19-3815/",
+      "primary_label": "Paper",
+      "secondary_links": [
+        {
+          "label": "Code",
+          "url": "https://github.com/zake7749/Fill-the-GAP"
+        }
+      ],
+      "abstract_en": [
+        "Fill the GAP studies how pretrained BERT representations can resolve ambiguous pronouns when the answer is one of two candidate entities or neither. Instead of relying on the final transformer layer by default, the approach examines which layers contain the most useful reference information. Frozen contextual embeddings are processed through low-dimensional projections and interaction-based classifiers, with dropout used to reduce reliance on redundant features. Predictions from different BERT configurations are combined into an ensemble.",
+        "The system placed fourth in Kaggle’s Gendered Pronoun Resolution competition without data augmentation. Beyond the competition result, the paper analyzes layer selection, feature redundancy, and pronoun–candidate attention patterns to understand why the representation choices matter. The analysis shows that the final layer is not necessarily the most effective choice for this task, while error cases illustrate the continued difficulty of examples requiring broader contextual or world knowledge. The contribution combines a practical resolution system with an empirical study of BERT’s internal representations."
+      ],
+      "abstract_editorial": {
+        "kind": "original_editorial_paraphrase",
+        "label": "Abstract",
+        "reviewed_on": "2026-09-22",
+        "source_ids": [
+          "V71-GAP"
+        ],
+        "review_scope": "full_paper",
+        "word_count": 156,
+        "not_a_verbatim_publisher_abstract": true
+      }
+    },
+    {
+      "id": "jmir-2022",
+      "title": "The Prevalence and Impact of Fake News on COVID-19 Vaccination in Taiwan: Retrospective Study of Digital Media",
+      "authors": [
+        "Yen-Pin Chen",
+        "Yi-Ying Chen",
+        "Kai-Chou Yang",
+        "Feipei Lai",
+        "Chien-Hua Huang",
+        "Yun-Nung Chen",
+        "Yi-Chin Tu"
+      ],
+      "year": 2022,
+      "date": "2022-04-26",
+      "date_kind": "journal_publication_date",
+      "venue": "Journal of Medical Internet Research",
+      "full_venue": "Journal of Medical Internet Research",
+      "volume": "24",
+      "issue": "4",
+      "pages": "e36830",
+      "type": "journal_article",
+      "author_position": 3,
+      "doi": "10.2196/36830",
+      "arxiv_id": null,
+      "source_ids": [
+        "S29",
+        "S30",
+        "V71-JMIR"
+      ],
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://www.jmir.org/2022/4/e36830"
+        }
+      ],
+      "summary_en": "Co-authored an interdisciplinary retrospective study relating digital-news misinformation indicators, online attention and vaccination patterns in Taiwan.",
+      "summary_zh": "共同研究數位新聞錯假訊息指標、網路關注度與台灣疫苗接種變化之間的關聯。",
+      "featured": false,
+      "publish": true,
+      "evidence": "public_record",
+      "ranking_scope": "historical; no present-day SOTA claim",
+      "display_venue": "Journal of Medical Internet Research",
+      "primary_url": "https://www.jmir.org/2022/4/e36830",
+      "primary_label": "Paper",
+      "secondary_links": [],
+      "abstract_en": [
+        "This retrospective study examines how Taiwan’s online news environment and public search interest were associated with COVID-19 vaccination uptake in 2021. News from 26 online outlets was analyzed with Islander to derive incitement and suspicion indicators, which were aggregated into a measure of suspicious-news prevalence. These signals were combined with Google Trends and official infection and vaccination data. Weekly statistical analyses examined vaccination patterns while accounting for vaccine availability and the interaction between news quality and public attention.",
+        "The analysis found that the combination of greater suspicious-news prevalence and stronger search interest was negatively associated with vaccinations in the following week. The study connects large-scale media analysis with public-health monitoring, rather than treating news volume alone as a measure of influence. Its findings concern population-level associations: automated news scores and search activity are proxies, not direct measurements of individual exposure or proof of a causal effect on vaccination decisions."
+      ],
+      "abstract_editorial": {
+        "kind": "original_editorial_paraphrase",
+        "label": "Abstract",
+        "reviewed_on": "2026-09-22",
+        "source_ids": [
+          "V71-JMIR"
+        ],
+        "review_scope": "publisher_hosted_structured_preprint_abstract",
+        "word_count": 149,
+        "not_a_verbatim_publisher_abstract": true
+      }
+    },
+    {
+      "id": "islander-2022",
+      "title": "Islander: A Real-Time News Monitoring and Analysis System",
+      "authors": [
+        "Chao-Wei Huang",
+        "Kai-Chou Yang",
+        "Zi-Yuan Chen",
+        "Hao-Chien Cheng",
+        "Po-Yu Wu",
+        "Yu-Yang Huang",
+        "Chung-Kai Hsieh",
+        "Geng-Zhi Wildsky Fann",
+        "Ting-Yin Cheng",
+        "Ethan Tu",
+        "Yun-Nung Chen"
+      ],
+      "year": 2022,
+      "date": "2022-04-25",
+      "date_kind": "arxiv_submission_date",
+      "venue": "arXiv preprint",
+      "full_venue": "arXiv",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "type": "preprint",
+      "author_position": 2,
+      "doi": "10.48550/arXiv.2204.11457",
+      "arxiv_id": "2204.11457",
+      "source_ids": [
+        "S31",
+        "V71-ISLANDER"
+      ],
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://arxiv.org/abs/2204.11457"
+        }
+      ],
+      "summary_en": "Co-authored a system report on real-time news organization, multi-source perspectives and automatically estimated news-quality indicators.",
+      "summary_zh": "介紹即時新聞整理、多來源觀點呈現及新聞品質代理指標的線上分析系統。",
+      "featured": false,
+      "publish": true,
+      "evidence": "public_record",
+      "ranking_scope": "historical; no present-day SOTA claim",
+      "display_venue": "arXiv · Preprint",
+      "primary_url": "https://arxiv.org/abs/2204.11457",
+      "primary_label": "Paper",
+      "secondary_links": [],
+      "abstract_en": [
+        "Islander brings news collection, event organization, and quality analysis into a real-time monitoring system. It clusters a stream of articles from multiple outlets into evolving events, allowing readers to compare coverage across sources instead of navigating isolated stories. Representative titles and generated topic tags support browsing and retrieval. The tagging component uses a conditional language model trained on news fields, and the paper evaluates its retrieval-oriented tag generation against extractive baselines such as TextRank and TF-IDF.",
+        "The system also exposes headline incitement, title bias, and content subjectivity as signals for examining how an event is presented. Social-media discussions provide additional views of attention and sentiment, while user co-occurrence representations support the analysis of potentially coordinated activity. These components are integrated into an interface for searching events and following their development. The contribution is an end-to-end news-analysis workflow; its quality and coordination indicators support investigation rather than establish whether an article is true or an account is inauthentic."
+      ],
+      "abstract_editorial": {
+        "kind": "original_editorial_paraphrase",
+        "label": "Abstract",
+        "reviewed_on": "2026-09-22",
+        "source_ids": [
+          "V71-ISLANDER"
+        ],
+        "review_scope": "full_paper",
+        "word_count": 157,
+        "not_a_verbatim_publisher_abstract": true
+      }
+    },
+    {
+      "id": "wsdm-report-2019",
+      "title": "Fake News Detection as Natural Language Inference",
+      "authors": [
+        "Kai-Chou Yang",
+        "Timothy Niven",
+        "Hung-Yu Kao"
+      ],
+      "year": 2019,
+      "date": "2019-07-17",
+      "date_kind": "arxiv_submission_date",
+      "venue": "WSDM Cup 2019 system report / arXiv",
+      "full_venue": "WSDM Cup 2019 system report; arXiv",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "type": "competition_report",
+      "author_position": 1,
+      "doi": "10.48550/arXiv.1907.07347",
+      "arxiv_id": "1907.07347",
+      "source_ids": [
+        "S27",
+        "S28",
+        "S33",
+        "V4-WSDM-OFFICIAL",
+        "V4-WSDM-PAPER",
+        "V71-WSDM"
+      ],
+      "links": [
+        {
+          "label": "Paper",
+          "url": "https://arxiv.org/abs/1907.07347"
+        },
+        {
+          "label": "Code",
+          "url": "https://github.com/zake7749/WSDM-Cup-2019"
+        }
+      ],
+      "summary_en": "Classified relations between news headlines as NLI, combining ensemble models, noisy-label retraining and transitivity analysis.",
+      "summary_zh": "將錯假新聞分類建模為自然語言推論，結合集成模型、噪聲標籤重訓及傳遞關係分析，取得競賽第三名。",
+      "featured": false,
+      "publish": true,
+      "evidence": "public_record",
+      "ranking_scope": "historical; no present-day SOTA claim",
+      "display_venue": "WSDM Cup 2019 · arXiv",
+      "primary_url": "https://arxiv.org/abs/1907.07347",
+      "primary_label": "Paper",
+      "secondary_links": [
+        {
+          "label": "Code",
+          "url": "https://github.com/zake7749/WSDM-Cup-2019"
+        }
+      ],
+      "abstract_en": [
+        "This WSDM Cup system treats Chinese fake-news analysis as a relation-prediction problem. Given a headline already identified as false and a second headline, the task is to decide whether the second agrees, disagrees, or is unrelated, rather than to classify an isolated article as true or false. The solution combines natural-language-inference architectures with fine-tuned BERT models, using complementary representations and ensemble predictions to handle the headline pairs.",
+        "To address noisy supervision, the training procedure uses model-generated soft labels and staged retraining. A further inference step exploits transitive relations among overlapping headlines in the competition data, while ensemble predictions handle the remaining cases. The final system achieved 88.063% accuracy and third place. The report shows how task formulation, label refinement, and dataset-specific relational structure can complement pretrained language models. Its results apply to the competition’s pairwise classification setting; the transitivity step depends on that data structure and is not a general-purpose guarantee of factual correctness."
+      ],
+      "abstract_editorial": {
+        "kind": "original_editorial_paraphrase",
+        "label": "Abstract",
+        "reviewed_on": "2026-09-22",
+        "source_ids": [
+          "V71-WSDM"
+        ],
+        "review_scope": "full_paper",
+        "word_count": 152,
+        "not_a_verbatim_publisher_abstract": true
+      }
+    },
+    {
+      "id": "kyara-article-2025",
+      "title": "Kaggle 2nd Place: Crafting Data for Traditional Chinese LLMs",
+      "authors": [
+        "Kai-Chou Yang"
+      ],
+      "year": 2025,
+      "date": "2025-05-24",
+      "date_kind": "article_date",
+      "venue": "Data Science Collective",
+      "display_venue": "Data Science Collective · Medium",
+      "type": "technical_article",
+      "source_ids": [
+        "V4-KYARA-ARTICLE",
+        "V71-KYARA"
+      ],
+      "links": [
+        {
+          "label": "Article",
+          "url": "https://medium.com/data-science-collective/kaggle-2nd-place-crafting-data-for-llm-success-09b4fd71d037"
+        }
+      ],
+      "summary_en": "The data synthesis, preference optimization and evaluation behind Kyara’s second-place Gemma competition solution.",
+      "publish": true,
+      "evidence": "public_author_article",
+      "original_title_note": "Previously listed in the material as “Kaggle 2nd Place: Crafting Data for LLM Success”. Current article heading is used; the original URL slug is unchanged.",
+      "primary_url": "https://medium.com/data-science-collective/kaggle-2nd-place-crafting-data-for-llm-success-09b4fd71d037",
+      "primary_label": "Article",
+      "secondary_links": [],
+      "abstract_en": [
+        "Kyara approaches Traditional Chinese language-model adaptation through the design of training data. Its instruction-synthesis pipeline retrieves related evidence, checks whether that evidence is sufficient to answer a question, and reformulates the findings into grounded responses. Translation, rewriting, and persona-based augmentation broaden the instruction mixture used for supervised fine-tuning, connecting knowledge coverage with the variety of requests a conversational model must handle.",
+        "Preference optimization adds a second source of learning signal. The article describes reward-model scoring, LLM judges with response-order consistency checks, and answer-verified mathematics examples for constructing chosen–rejected pairs. The released resources include one million instruction examples and approximately 150,000 preference pairs. Evaluation combines tasks with reference answers and open-ended Chinese conversation assessed by LLM judges. Alongside Kyara’s second-place Gemma competition result, the article documents practical choices around data filtering and training objectives, while acknowledging that retrieval and generated supervision can still introduce errors."
+      ],
+      "abstract_editorial": {
+        "kind": "original_editorial_paraphrase",
+        "label": "Abstract",
+        "reviewed_on": "2026-09-22",
+        "source_ids": [
+          "V71-KYARA"
+        ],
+        "review_scope": "full_article",
+        "word_count": 144,
+        "not_a_verbatim_publisher_abstract": true
+      }
+    },
+    {
+      "id": "closer-article-2018",
+      "title": "2nd Place Solution for CIKM AnalytiCup 2018",
+      "authors": [
+        "Kai-Chou Yang"
+      ],
+      "year": 2018,
+      "date": "2018-09-08",
+      "date_kind": "article_date",
+      "venue": "TDS Archive",
+      "display_venue": "TDS Archive · Medium",
+      "type": "technical_article",
+      "source_ids": [
+        "V4-CIKM-ARTICLE",
+        "V71-CLOSER"
+      ],
+      "links": [
+        {
+          "label": "Article",
+          "url": "https://medium.com/data-science/simtext-2nd-solution-for-cikm-analyticup-2018-b3347e026e67"
+        }
+      ],
+      "summary_en": "The Closer solution: complementary matching models, symmetry, soft-label training and ensemble design.",
+      "publish": true,
+      "evidence": "public_author_article",
+      "publication_note": "The former Towards Data Science Medium publication is now titled TDS Archive. This is a technical article, not a CIKM proceedings paper.",
+      "primary_url": "https://medium.com/data-science/simtext-2nd-solution-for-cikm-analyticup-2018-b3347e026e67",
+      "primary_label": "Article",
+      "secondary_links": [],
+      "abstract_en": [
+        "Closer addresses cross-lingual short-text matching: using English resources to support semantic matching between Spanish questions. The solution combines word- and character-level inputs with engineered similarity features, then builds complementary models around decomposable attention, recurrent comparison, and densely augmented convolutions. Because matching should not depend on which question is presented first, the architecture explicitly symmetrizes pair interactions rather than relying on a single input order.",
+        "Training proceeds in two stages. Initial models produce blended predictions that become soft supervision for a second round of training, helping the system cope with noisy labels and share information across model families. A final DART-based stacking model combines their outputs. The second-place CIKM AnalytiCup solution is presented as a reproducible engineering account: the article explains feature construction, architectural choices, regularization, distillation, and ensembling, and discusses why label inconsistency matters for question matching. Together, these choices connect cross-lingual representation learning with a carefully structured prediction pipeline."
+      ],
+      "abstract_editorial": {
+        "kind": "original_editorial_paraphrase",
+        "label": "Abstract",
+        "reviewed_on": "2026-09-22",
+        "source_ids": [
+          "V71-CLOSER"
+        ],
+        "review_scope": "full_article",
+        "word_count": 150,
+        "not_a_verbatim_publisher_abstract": true
+      }
+    }
+  ],
+  "experience": [
+    {
+      "id": "taiwan-ai-labs-lead",
+      "title": "NLP Team Lead",
+      "organization": "Taiwan AI Labs",
+      "start": "2023-03",
+      "end": null,
+      "location": "Taipei, Taiwan",
+      "source_ids": [
+        "U01",
+        "U05",
+        "U06"
+      ],
+      "publish": true,
+      "summary_en": "Lead the technical direction of language-model and agent development, connecting large-scale data engineering, post-training and agent systems.",
+      "summary_zh": "推動語言模型與代理系統的技術方向，串接大規模資料工程、模型後訓練與系統開發。",
+      "responsibilities_en": [
+        "Build data-curation and quality-management pipelines for large language-model corpora.",
+        "Develop knowledge synthesis and verifiable synthetic interaction workflows for model training.",
+        "Advance agent reasoning and tool use through supervised fine-tuning, rejection sampling and reinforcement learning.",
+        "Design orchestration, context, memory, skills and tool-use components, and guide cross-functional integration."
+      ],
+      "responsibilities_zh": [
+        "建立大型語言模型語料的整理與品質管理流程。",
+        "開發知識合成與可驗證互動資料流程。",
+        "以監督微調、拒絕採樣與強化學習改善代理推理及工具使用。",
+        "設計協作調度、上下文、記憶、技能與工具元件，協調跨職能整合。"
+      ],
+      "focus_en": "Data curation, knowledge synthesis, supervised fine-tuning, rejection sampling, reinforcement learning, and stateful agent systems.",
+      "focus_zh": ""
+    },
+    {
+      "id": "taiwan-ai-labs-ml",
+      "title": "Machine Learning Engineer",
+      "organization": "Taiwan AI Labs",
+      "start": "2019-09",
+      "end": "2023-03",
+      "location": null,
+      "source_ids": [
+        "U04",
+        "U06"
+      ],
+      "publish": true,
+      "summary_en": "Built retrieval, question-answering and language-understanding systems, with an emphasis on weak supervision, domain adaptation and reusable training pipelines.",
+      "summary_zh": "開發資訊檢索、問答與語言理解系統，著重弱監督、領域適應及可重用的訓練流程。",
+      "responsibilities_en": [
+        "Implemented multilingual dense retrieval, passage reranking and retrieval-augmented generation.",
+        "Developed generative pseudo-labeling and compact rerankers for domain adaptation and efficient inference.",
+        "Built streaming document clustering, Chinese text correction and conditional language-generation workflows.",
+        "Built ETL and Kubeflow-based training pipelines supporting data augmentation and model evaluation."
+      ],
+      "responsibilities_zh": [
+        "實作多語密集檢索、段落重排序與檢索增強生成。",
+        "以生成式偽標籤與精簡重排序模型支援領域適應及高效率推論。",
+        "建立串流文件分群、中文修字及條件式文本生成流程。",
+        "建置 ETL 與 Kubeflow 訓練管線，支援資料增強及模型評估。"
+      ],
+      "focus_en": "Multilingual dense retrieval, passage reranking, RAG, and Kubeflow training pipelines.",
+      "focus_zh": ""
+    }
+  ],
+  "education": [
+    {
+      "id": "ncku-masters",
+      "institution": "National Cheng Kung University",
+      "field": "Computer Science and Information Engineering",
+      "start": "2017",
+      "end": "2019",
+      "degree": "Master’s degree",
+      "gpa": "4.30 / 4.30",
+      "rank": "Ranked 1st",
+      "highlights": [
+        "Honorary member of the Phi-Tau-Phi Scholastic Honor Society.",
+        "Teaching assistant for Introduction to Data Science, Data Mining, and Discrete Mathematics.",
+        "Speaker for machine-learning lectures at the Industrial Technology Research Institute and Delta Electronics."
+      ],
+      "source_ids": [
+        "OWNER-V3-EDUCATION"
+      ],
+      "publish": true,
+      "highlights_display": [
+        "Honorary member of the Phi-Tau-Phi Scholastic Honor Society.",
+        "Teaching assistant for Introduction to Data Science, Data Mining, and Discrete Mathematics.",
+        "Speaker for machine-learning lectures at the Industrial Technology Research Institute and Delta Electronics."
+      ]
+    },
+    {
+      "id": "ncku-bachelors",
+      "institution": "National Cheng Kung University",
+      "field": "Computer Science and Information Engineering",
+      "start": "2013",
+      "end": "2017",
+      "degree": "Bachelor’s degree",
+      "gpa": "3.94 / 4.30",
+      "rank": "Ranked 4th",
+      "highlights": [
+        "Academic Excellence Awards, 2015 & 2016; honorable mention at the graduation exhibition.",
+        "Research assistant on a question-answering project funded by the Ministry of Science and Technology."
+      ],
+      "source_ids": [
+        "OWNER-V3-EDUCATION"
+      ],
+      "publish": true,
+      "highlights_display": [
+        "Academic Excellence Awards, 2015 & 2016.",
+        "Honorable mention at the graduation exhibition.",
+        "Research assistant on a question-answering project funded by the Ministry of Science and Technology."
+      ]
+    }
+  ],
+  "community": {
+    "title": "Qwen Dev Ambassador",
+    "source_ids": [
+      "OWNER-2026-09-21-QWEN"
+    ],
+    "organization_role": false
+  },
+  "footer": {
+    "email": "zake7749@gmail.com",
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/zake7749"
+      },
+      {
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/zake7749"
+      },
+      {
+        "label": "Scholar",
+        "url": "https://scholar.google.com/citations?hl=en&user=mUbKQD4AAAAJ"
+      },
+      {
+        "label": "Blog",
+        "url": "https://zake7749.github.io/"
+      }
+    ]
+  },
+  "policy": {
+    "blog_feed": false,
+    "render_blog_articles": false,
+    "live_repository_counters": false,
+    "contact_is_footer_not_campaign": true,
+    "preserve_blog_root": true,
+    "preserve_routes": [
+      "/",
+      "/archives/",
+      "/2026/08/30/chinese-llm-writing/",
+      "/Chinese-Writing-Bench/",
+      "/Monomer/doc/"
+    ],
+    "internal_metrics_publish": false,
+    "lumisonde_role": "Personal project, as explicitly stated by the owner.",
+    "education_note": "Two completed degree levels, GPA, rank, honors and activities supplied directly by owner. Do not infer MSc/BSc award nomenclature, cohort size, high-school dates, or additional awards.",
+    "resource_note": "No license boilerplate is rendered. This does not relicense any linked artifact; see upstream repository terms when reusing material.",
+    "research_ui": "Publication; seven permanent editorial selections. All visible. Research documents are Paper; Medium essays are Article. No feed. Venue and publication type remain accurate.",
+    "prototype": "Horizon v4; preserve accepted visual identity and quiet footer.",
+    "talks_ui": "No empty Talks section in the current preview. Optional renderer is ready for approved material.",
+    "hero_rolelines": false,
+    "hero_scroll_prompt": false,
+    "chinese_solution_link_public": false,
+    "navigation": "Fixed header; transparent at page top, warm translucent surface after scrolling; active section state.",
+    "project_interaction": "Title is the primary external anchor; its hit area extends to the card. Secondary links remain independent, with no nested anchors.",
+    "competition_interaction": "Title links to the original competition page. The rest of the header and the plus button expand Task / Solution. Content is visible without JS.",
+    "publication_title": "Publication",
+    "render_selected_technical_articles": true,
+    "navbar_material": "continuous-dark-frosted-glass-no-scroll-theme-switch",
+    "hover_palette": "warm-olive-tonal-no-white-inversion",
+    "v6_interaction_contract": {
+      "navigation": "Same nearly-clear glass background on all sections. Only text ink responds to the hero boundary.",
+      "competition": "Hover tint only on collapsed entries and hover-capable pointers; expanded entries have the section background, including while pointer remains over the header.",
+      "hero": "Name-led, small supporting tagline, no project CTA or scroll instruction. Four native icon links."
+    }
+  },
+  "open_source": {
+    "id": "open-source",
+    "title": "Open source & models.",
+    "summary": "Code, models and learning data, from early NLP tools to post-training and evaluation.",
+    "source_ids": [
+      "V5-GITHUB-PROFILE",
+      "V5-HF-PROFILE",
+      "U01",
+      "V6-HF-PROFILE"
+    ],
+    "groups": [
+      {
+        "id": "github",
+        "platform": "GitHub",
+        "heading": "Code & implementations",
+        "description": "Training recipes, evaluation tools, and NLP foundations.",
+        "url": "https://github.com/zake7749",
+        "cta": "Explore GitHub",
+        "items": [
+          {
+            "id": "mianbot",
+            "title": "Mianbot · Chatbot",
+            "description": "Retrieval-based Chinese conversation, with a PTT-derived dialogue corpus.",
+            "source_ids": [
+              "V5-MIANBOT",
+              "V5-GOSSIPING"
+            ],
+            "links": [
+              {
+                "label": "Code",
+                "url": "https://github.com/zake7749/Chatbot"
+              },
+              {
+                "label": "Gossiping dataset",
+                "url": "https://github.com/zake7749/Gossiping-Chinese-Corpus"
+              }
+            ],
+            "primary_url": "https://github.com/zake7749/Chatbot",
+            "secondary_links": [
+              {
+                "label": "Gossiping dataset",
+                "url": "https://github.com/zake7749/Gossiping-Chinese-Corpus"
+              }
+            ],
+            "primary_label": "Code"
+          },
+          {
+            "id": "competition-solutions",
+            "title": "Competition solutions",
+            "description": "Solution code from four competition entries in text matching and classification.",
+            "source_ids": [
+              "S32",
+              "R03",
+              "S33",
+              "S34"
+            ],
+            "secondary_links": [
+              {
+                "label": "DeepToxic",
+                "url": "https://github.com/zake7749/DeepToxic"
+              },
+              {
+                "label": "Closer",
+                "url": "https://github.com/zake7749/CIKM-AnalytiCup-2018"
+              },
+              {
+                "label": "WSDM Cup",
+                "url": "https://github.com/zake7749/WSDM-Cup-2019"
+              },
+              {
+                "label": "Fill the GAP",
+                "url": "https://github.com/zake7749/Fill-the-GAP"
+              }
+            ]
+          },
+          {
+            "id": "nlp-tutorials",
+            "title": "NLP learning resources",
+            "description": "Hands-on Chinese word embeddings and sequence-to-sequence learning.",
+            "source_ids": [
+              "S36",
+              "V3-GITHUB-PROFILE",
+              "V3-WORD2VEC"
+            ],
+            "links": [
+              {
+                "label": "word2vec",
+                "url": "https://github.com/zake7749/word2vec-tutorial"
+              },
+              {
+                "label": "Seq2Seq",
+                "url": "https://github.com/zake7749/Sequence-to-Sequence-101"
+              }
+            ],
+            "primary_url": "https://github.com/zake7749/word2vec-tutorial",
+            "secondary_links": [
+              {
+                "label": "word2vec",
+                "url": "https://github.com/zake7749/word2vec-tutorial"
+              },
+              {
+                "label": "Seq2Seq",
+                "url": "https://github.com/zake7749/Sequence-to-Sequence-101"
+              }
+            ],
+            "primary_label": "word2vec"
+          }
+        ],
+        "metrics": [
+          {
+            "id": "github-stars",
+            "display": "2,000+",
+            "label": "stars",
+            "snapshot": "2026-09-22",
+            "tooltip": "Across my public repositories. Conservative lower bound; profile observed 22 September 2026.",
+            "source_ids": [
+              "V5-GITHUB-PROFILE"
+            ]
+          }
+        ],
+        "metric_metadata": {
+          "label": "GitHub stars",
+          "display": "2,000+",
+          "qualifier": "Across my public repositories",
+          "reviewed_on": "2026-09-22",
+          "value_kind": "conservative_lower_bound",
+          "minimum": 2000,
+          "verification": "Six different public repositories displayed on the GitHub profile total 2,164 stars (907+522+245+224+192+74). This supports the existing 2,000+ lower bound, not a complete or live portfolio total.",
+          "source_ids": [
+            "V5-GITHUB-PROFILE"
+          ],
+          "live": false,
+          "scope": "All public repositories, not only the three resources below."
+        }
+      },
+      {
+        "id": "hugging-face",
+        "platform": "Hugging Face",
+        "heading": "Models & training data",
+        "description": "Released checkpoints and datasets for learning from interaction.",
+        "url": "https://huggingface.co/zake7749",
+        "cta": "Explore Hugging Face",
+        "items": [
+          {
+            "id": "learning-data",
+            "title": "Coding & preference",
+            "category": "data",
+            "category_label": "Data collection",
+            "description": "Learning data built around execution feedback and chosen–rejected pairs.",
+            "source_ids": [
+              "S12",
+              "S16",
+              "S17",
+              "S18"
+            ],
+            "links": [
+              {
+                "label": "Coding SFT",
+                "url": "https://huggingface.co/datasets/zake7749/Qwen3-Coder-Next-Open-Code-SFT"
+              },
+              {
+                "label": "Preference data",
+                "url": "https://huggingface.co/datasets/zake7749/Qwen3-Coder-Next-OpenCode-Preference"
+              }
+            ],
+            "primary_url": "https://huggingface.co/datasets/zake7749/Qwen3-Coder-Next-Open-Code-SFT",
+            "secondary_links": [
+              {
+                "label": "Coding SFT",
+                "url": "https://huggingface.co/datasets/zake7749/Qwen3-Coder-Next-Open-Code-SFT"
+              },
+              {
+                "label": "Preference data",
+                "url": "https://huggingface.co/datasets/zake7749/Qwen3-Coder-Next-OpenCode-Preference"
+              }
+            ],
+            "primary_label": "Coding SFT"
+          },
+          {
+            "id": "stem-reasoning",
+            "title": "STEM & reasoning",
+            "category": "data",
+            "category_label": "Data collection",
+            "description": "Chinese science QA and mathematical reasoning, with answer-level checks.",
+            "primary_url": "https://huggingface.co/datasets/zake7749/OpenScience-Chinese-Reasoning-SFT",
+            "primary_label": "OpenScience Chinese reasoning data",
+            "source_ids": [
+              "V5-OPENSCIENCE",
+              "V5-REASONLITE"
+            ],
+            "links": [
+              {
+                "label": "OpenScience",
+                "url": "https://huggingface.co/datasets/zake7749/OpenScience-Chinese-Reasoning-SFT"
+              },
+              {
+                "label": "Reasonlite Verified",
+                "url": "https://huggingface.co/datasets/zake7749/Qwen-3.5-Reasonlite-Verified"
+              }
+            ],
+            "secondary_links": [
+              {
+                "label": "OpenScience",
+                "url": "https://huggingface.co/datasets/zake7749/OpenScience-Chinese-Reasoning-SFT"
+              },
+              {
+                "label": "Reasonlite Verified",
+                "url": "https://huggingface.co/datasets/zake7749/Qwen-3.5-Reasonlite-Verified"
+              }
+            ]
+          },
+          {
+            "id": "trajectories",
+            "title": "Agent trajectories",
+            "category": "data",
+            "category_label": "Data collection",
+            "description": "Multi-turn tool-use trajectories for training agents: ToolScale rollouts from two frontier models, and a larger set filtered against ground-truth tool calls.",
+            "source_ids": [
+              "S13",
+              "S14"
+            ],
+            "links": [
+              {
+                "label": "Qwen trajectories",
+                "url": "https://huggingface.co/datasets/zake7749/Qwen-3.6-plus-agent-tool-calling-trajectory"
+              },
+              {
+                "label": "DeepSeek trajectories",
+                "url": "https://huggingface.co/datasets/zake7749/deepseek-v4-pro-agent-tool-calling-trajectory"
+              }
+            ],
+            "primary_url": "https://huggingface.co/datasets/zake7749/Qwen-3.6-plus-agent-tool-calling-trajectory",
+            "secondary_links": [
+              {
+                "label": "Qwen Agentic Assistant",
+                "url": "https://huggingface.co/datasets/zake7749/Qwen-3.6-plus-agent-tool-calling-trajectory"
+              },
+              {
+                "label": "DeepSeek Agentic Assistant",
+                "url": "https://huggingface.co/datasets/zake7749/deepseek-v4-pro-agent-tool-calling-trajectory"
+              },
+              {
+                "label": "Qwen Tool Calling",
+                "url": "https://huggingface.co/datasets/zake7749/Qwen3.6-35B-A3B-Tool-Calling"
+              }
+            ],
+            "primary_label": "Qwen trajectories"
+          }
+        ],
+        "metrics": [
+          {
+            "id": "hf-resources",
+            "display": "30+",
+            "label": "resources",
+            "snapshot": "2026-09-22",
+            "tooltip": "Public model and dataset repositories on my Hugging Face profile. Static lower bound, reviewed September 2026; not downloads or unique examples.",
+            "source_ids": [
+              "V6-HF-PROFILE"
+            ]
+          }
+        ]
+      }
+    ],
+    "display_policy": {
+      "platform_metrics_only": true,
+      "metrics_live": false,
+      "outbound_arrow_icons": false,
+      "platform_heading_links_to_profile": true,
+      "resource_title_links_to_primary": true,
+      "render_secondary_links_explicitly": true,
+      "ordered_ids": {
+        "github": [
+          "mianbot",
+          "competition-solutions",
+          "nlp-tutorials"
+        ],
+        "hugging-face": [
+          "learning-data",
+          "stem-reasoning",
+          "trajectories"
+        ]
+      }
+    }
+  },
+  "teaching_and_speaking": {
+    "summary": "Delivered machine-learning lectures for the Industrial Technology Research Institute and Delta Electronics.",
+    "source_ids": [
+      "OWNER-V3-EDUCATION"
+    ],
+    "publish": true,
+    "note": "Owner listed these activities within the 2017–2019 master’s entry; individual dates, talk titles, public slides and permission were not supplied."
+  },
+  "talks": [],
+  "talks_policy": {
+    "render_when_empty": false,
+    "approval_required": true,
+    "required_fields": [
+      "id",
+      "title",
+      "venue",
+      "year",
+      "url",
+      "publish",
+      "publicly_shareable",
+      "source_ids"
+    ],
+    "placement": "after Publication, before Background",
+    "editorial_limit": 5,
+    "note": "Only owner-confirmed public or sanitized, approved slides. Competition slides are already attached to the corresponding results and projects; do not create duplicate talk entries solely to fill a section."
+  },
+  "hero": {
+    "eyebrow": "KAI-CHOU YANG · 楊凱州",
+    "headline": "Justin Yang.",
+    "introduction": "I build data and training systems for language models and agents, from large-scale data curation to agent post-training.",
+    "show_role": false,
+    "show_ambassador": false,
+    "show_scroll_prompt": false,
+    "tagline": "From data to capability.",
+    "show_primary_cta": false,
+    "social_links": [
+      {
+        "id": "github",
+        "label": "GitHub",
+        "url": "https://github.com/zake7749",
+        "icon": "github"
+      },
+      {
+        "id": "scholar",
+        "label": "Google Scholar",
+        "url": "https://scholar.google.com/citations?hl=en&user=mUbKQD4AAAAJ",
+        "icon": "googlescholar"
+      },
+      {
+        "id": "huggingface",
+        "label": "Hugging Face",
+        "url": "https://huggingface.co/zake7749",
+        "icon": "huggingface"
+      },
+      {
+        "id": "blog",
+        "label": "Blog",
+        "url": "https://zake7749.github.io/",
+        "icon": "blog"
+      }
+    ]
+  },
+  "navigation": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#work",
+      "label": "Projects"
+    },
+    {
+      "href": "#competitions",
+      "label": "Competitions"
+    },
+    {
+      "href": "#publication",
+      "label": "Publications"
+    },
+    {
+      "href": "#background",
+      "label": "Background"
+    },
+    {
+      "href": "#contact",
+      "label": "Contact"
+    }
+  ],
+  "publication_abstract_policy": {
+    "language": "en",
+    "kind": "editorial_paraphrase",
+    "paragraphs_per_entry": 2,
+    "unexpanded_list": "unchanged from v7",
+    "author_order": "unchanged",
+    "short_summary_field": "summary_en is retained for compact reuse; website detail renders abstract_en",
+    "original_source_links": "Retained per paper/article. Research notes record review scope and access limitations.",
+    "ui_scope": "Publication details and one additional recognition link only. Approved Chinese files are not changed."
+  },
+  "publication_groups": [
+    {
+      "id": "papers",
+      "heading": "Papers",
+      "ids": [
+        "jmir-2022",
+        "islander-2022",
+        "sinn-2020",
+        "fill-gap-2019",
+        "wsdm-report-2019"
+      ]
+    },
+    {
+      "id": "writing",
+      "heading": "Technical writing",
+      "ids": [
+        "kyara-article-2025",
+        "closer-article-2018"
+      ]
+    }
+  ],
+  "writing_note": {
+    "label": "雷德麥的藏書閣",
+    "lang": "zh-Hant",
+    "url": "https://zake7749.github.io/"
+  }
+}

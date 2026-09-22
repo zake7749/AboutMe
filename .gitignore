@@ -1,0 +1,11 @@
+.DS_Store
+._*
+.backup/
+Justin_Yang_About_Horizon_v7_2/
+build/
+linkedin-about-research.md
+Resume.pdf
+data/sources.json
+data/metrics-snapshot.json
+data/talks.schema.json
+assets/portrait.webp
